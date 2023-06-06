@@ -4,7 +4,7 @@ eleventyImport:
   collections: ["roll"]
 ---
 
-<main class="gallary_container">
+<main class="gallery_container">
   {%- for roll in collections.roll -%}
     {{roll.number}}
     <div class="roll_container" type="button">
@@ -22,7 +22,7 @@ eleventyImport:
           {%- endfor -%}
         {# </ol> #}
         <div class="roll_container__description description__details">
-          <p class="description__title">{{roll.date}}</p>
+          <p class="description__title">{{roll.date.toDateString()}}</p>
           <p class="description__title">{{roll.camera}}</p>
         </div>
       </a>
