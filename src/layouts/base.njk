@@ -1,0 +1,22 @@
+<!DOCKTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        {{ title }}{% if page.url != '/' %} — {{ meta.title }}{% endif %}
+    </title>
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="/styles/gallary.css"/>
+    <link rel="stylesheet" href="/styles/film.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&display=swap">
+  </head>
+  <body class="body_container">
+
+    {% include 'header.njk' %}
+
+    {{content | safe}}
+
+    {% include 'footer.njk' %}
+  </body>
+</html>

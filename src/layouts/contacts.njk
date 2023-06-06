@@ -1,0 +1,57 @@
+---
+
+layout: base.njk
+
+---
+
+<main class="">
+  <a href="../../index.html">
+    <p class="back">
+      Back
+    </p>
+  </a>
+  <article class="film_description">
+    <p class="film_description__title">
+      <strong>Title:</strong>
+      {{title}}
+    </p>
+    <p class="film_description__date">
+      <strong>Date:</strong>
+      {{date}}
+    </p>
+    <p class="film_description__story">
+      <strong>Story:</strong>
+      {{story}}
+    </p>
+    <p class="film_description__camera">
+      <strong>Camera</strong>:
+      {{camera}}
+    </p>
+    <p class="film_description__lens">
+      <strong>Lens</strong>:
+      {{lens}}
+    </p>
+    <p class="film_description__film">
+      <strong>Film</strong>:
+      {{film}}
+    </p>
+    <p class="film_description__develop">
+      <strong>Developing</strong>:
+      {{developing}}
+    </p>
+  </article>
+  <div class="contacts_container">
+
+    {%- for photo in photos -%}
+      <div class="contact">
+        <a href="/rolls/{{number}}/photos/{{photo.number}}.jpg">
+          <img class="contact__image" src="/rolls/{{number}}/photos/{{photo.number}}.jpg" loading="lazy" alt="film photo">
+        </a>
+        <p>
+          {{photo.description}}
+        </p>
+      </div>
+    {%- endfor -%}
+
+  </div>
+</main>
