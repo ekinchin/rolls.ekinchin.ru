@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-        {{ title }}— {{ meta.title }}
+        {{ meta.title }}{% if title %}: {{title}}{% endif %}
     </title>
     <link rel="stylesheet" href="/styles/style.css"/>
     <link rel="stylesheet" href="/styles/gallery.css"/>

@@ -1,4 +1,5 @@
 ---
+layout: contacts.njk
 number: 1
 title: Почти первая пленка
 date: 2012-04-05
@@ -7,7 +8,13 @@ camera: ФЭД-2
 lens: Инустар-61Д
 film: Kodak BW400CN
 developing: C41
-tags: roll
+tags:
+  - roll
+  - fed
+  - industar
+  - kodak
+  - c41
+  - bw
 photos:
   - number: 1
     description:
@@ -49,5 +56,4 @@ photos:
     description:
   - number: 20
     description:
-layout: contacts.njk
 ---

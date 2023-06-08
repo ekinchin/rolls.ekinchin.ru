@@ -1,4 +1,4 @@
 <header class="header_container">
-  <h1 class="header__sitename text">My Films</h1>
-  <p class="header__author text">Evgenii Kinchin</p>
+  <div><h1 class="header__sitename text"><strong>{{meta.title}}</strong>{% if title %}: {{title}}{% endif %}</h1></div>
+  <p class="header__author text">{{meta.author}}</p>
 </header>
