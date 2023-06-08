@@ -10,7 +10,7 @@ eleventyImport:
     <div class="roll_container" type="button">
       <a href="/rolls/{{roll.data.number}}/index.html" class="text">
         <div class="roll_container__description" type="button">
-          <p class="description__title">Море леса</p>
+          <p class="description__title">{{ roll.data.title }}</p>
         </div>
         <ul type="none">
           {%- for photo in roll.data.photos -%}
