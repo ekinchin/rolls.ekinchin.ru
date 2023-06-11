@@ -3,6 +3,7 @@ layout: contacts.njk
 number: 1
 title: Почти первая пленка
 date: 2012-04-05
+location: Russia, Tyumen
 story: снимаем все подрят
 camera: ФЭД-2
 lens: Инустар-61Д
