@@ -15,7 +15,7 @@ eleventyImport:
         <ul type="none">
           {%- for photo in roll.data.photos -%}
             <li class="roll_card">
-              <img class="roll_card__image" src="/rolls/{{roll.data.number}}/photos/{{photo.number}}.jpg" loading="lazy" alt="film photo">
+              <img class="roll_card__image" src="/rolls/{{roll.data.number}}/photos/xs-{{photo.number}}.jpg" loading="lazy" alt="{{photo.description}}">
             </li>
           {%- endfor -%}
         </ol>
