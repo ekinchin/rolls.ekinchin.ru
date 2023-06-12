@@ -49,11 +49,9 @@ layout: base.njk
         <a href="/rolls/{{number}}/photos/{{photo.number}}.jpg">
           <img class="contact__image" src="/rolls/{{number}}/photos/xs-{{photo.number}}.jpg" loading="lazy" alt="{{photo.description}}">
         </a>
-        {% if photo.description %}
-          <p>
-            {{photo.description}}
-          </p>
-        {% endif %}
+        <p>
+          {{photo.number}}. {{photo.description}}
+        </p>
       </div>
     {%- endfor -%}
 
