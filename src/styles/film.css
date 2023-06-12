@@ -20,24 +20,24 @@
   padding: 0;
   background-color: #C6C6C6;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-around;
   align-items: start;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .contacts_container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .contacts_container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .contacts_container {
     grid-template-columns: repeat(2, 1fr);
   }

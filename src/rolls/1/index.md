@@ -3,7 +3,7 @@ layout: contacts.njk
 number: 1
 title: Отпуск
 filmed: февраль 2023
-location: Turkey, Istambul
+location: Turkey, Istanbul
 story: Туристические стамбульские фоточки, отпуск
 camera: Olympus OM-10
 lens: Olympus G.Zuiko f=28mm 1:3,5
@@ -20,15 +20,15 @@ photos:
   - number: 1
     description: Фатих, эта лестница с разноцветными ступенями
   - number: 2
-    description: вид на Босфор
+    description: Вид на Босфор
   - number: 3
-    description: какая-то из торговых улиц. Здесь есть целые улицы специализирущиеся на определенных товарах - обуви, чемоданах и т.д.
+    description: Одна из торговых улиц. Здесь есть целые улицы специализирущиеся на определенных товарах - обуви, чемоданах и т.д.
   - number: 4
     description:
   - number: 5
     description:
   - number: 6
-    description: недалеко от Египетского базара
+    description: Недалеко от Египетского базара
   - number: 7
     description: Египетский базар
   - number: 8
