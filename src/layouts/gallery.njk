@@ -5,7 +5,7 @@ eleventyImport:
 ---
 
 <main class="gallery_container">
-  {%- for roll in collections.roll -%}
+  {%- for roll in collections.roll | reverse -%}
     {{roll.number}}
     <div class="roll_container" type="button">
       <a href="/rolls/{{roll.data.number}}/index.html" class="text">
