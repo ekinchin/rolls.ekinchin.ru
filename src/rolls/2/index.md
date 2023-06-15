@@ -63,14 +63,14 @@ photos:
   - number: 23
     description:
   - number: 24
-    description:
+    description: Radanovici, вид с балкна апартов. Здесь и далее Черногория
   - number: 25
-    description:
+    description: Вид из апартов
   - number: 26
     description:
   - number: 27
-    description:
+    description: Вид с Котор Серпентине
   - number: 28
-    description:
+    description: Вид с Котор Серпентине
   - number: 29
     description:
