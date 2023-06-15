@@ -3,6 +3,7 @@ layout: contacts.njk
 number: 2
 title: Отпуск. Стамбул переходящий в Черногорию
 filmed: февраль-март 2023
+date: 2023-06-12
 location: Turkey, Istanbul. Montenegro
 story: Туристические фоточки Стамбула и Черногории
 camera: Olympus OM-10

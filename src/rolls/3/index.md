@@ -3,6 +3,7 @@ layout: contacts.njk
 number: 3
 title: Отпуск. Черногория, начало
 filmed: 1-11 марта 2023
+date: 2023-06-15
 location: Montenegro
 story: Туристические фоточки Черногории
 camera: Olympus OM-10

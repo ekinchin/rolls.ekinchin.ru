@@ -3,6 +3,7 @@ layout: contacts.njk
 number: 1
 title: Отпуск
 filmed: февраль 2023
+date: 2023-06-10
 location: Turkey, Istanbul
 story: Туристические стамбульские фоточки, отпуск
 camera: Olympus OM-10
