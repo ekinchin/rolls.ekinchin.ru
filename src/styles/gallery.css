@@ -1,7 +1,11 @@
 .gallery_container {
   width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: row;
+  gap: 48px;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -9,10 +13,10 @@
 }
 
 .roll_container {
+  flex-shrink: 0;
   height: 100%;
   max-width: 360px;
   padding: 0 0 0 0;
-  margin-left: 48px;
   background-color: #C6C6C6;
   overflow: auto;
   display: flex;
