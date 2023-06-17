@@ -13,7 +13,7 @@ developing: Fomadon R09, 1:100, 7 min. Заметно ошибся в пропо
 tags:
   - roll
   - olympus
-  - industar
+  - zuiko 28mm
   - tasma
   - R09 (Rodinal)
   - bw

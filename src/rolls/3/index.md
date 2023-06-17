@@ -9,12 +9,13 @@ story: Туристические фоточки Черногории
 camera: Olympus OM-10
 lens: Olympus G.Zuiko f=28mm 1:3,5
 film: Agfa Agfapan APX100
-developing: Rodinal R09 1:50, 18 min, 18°C
+developing: Fomadon R09 1:50, 18 min, 18°C
 tags:
   - roll
   - olympus
   - zuiko 28mm
-  - rodinal
+  - apx100
+  - R09 (Rodinal)
   - bw
 photos:
   - number: 1
