@@ -5,8 +5,9 @@
   background-color: #C6C6C6;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-content: space-around;
   align-items: start;
+  grid-gap: 16px;
+  padding: 16px;
 }
 
 @media (max-width: 1600px) {
@@ -36,7 +37,6 @@
 
 .contact {
   width: 100%;
-  padding: 16px;
 }
 
 .contact p {
@@ -50,6 +50,7 @@
 
 .film_description {
   padding: 16px;
+  max-width: 640px;
   display: flex;
   flex-direction: column;
   justify-content: left;
