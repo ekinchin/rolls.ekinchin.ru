@@ -4,7 +4,7 @@
   padding-right: 16px;
   display: flex;
   flex-direction: row;
-  gap: 48px;
+  gap: 24px;
   flex-wrap: nowrap;
   justify-content: flex-start;
   overflow-y: hidden;

@@ -18,10 +18,10 @@ eleventyImport:
               <img class="roll_card__image" src="/rolls/{{roll.data.number}}/photos/xs-{{photo.number}}.jpg" loading="lazy" alt="{{photo.description}}">
             </li>
           {%- endfor -%}
-        </ol>
+        </ul>
         <div class="roll_container__description description__details">
-          <p class="description__title">{{roll.data.filmed}}</p>
-          <p class="description__title">{{roll.data.camera}}</p>
+          <p class="description__filmed">{{roll.data.filmed}}</p>
+          <p class="description__camera">{{roll.data.camera}}</p>
         </div>
       </a>
     </div>
