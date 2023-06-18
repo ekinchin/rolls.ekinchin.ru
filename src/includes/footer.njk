@@ -1,7 +1,10 @@
 <footer class="footer_container">
     <p class="footer__say text">
-        make foto.</p>
+        {{ meta.message }}
+    </p>
+    <a class="text" href="{{ meta.github }}">GitHub</a>
+    <a class="text" href="{{ meta.poweredBy }}">Powered by Eleventy</a>
     <p class="footer__year text">
-        2023
+      {{ meta.year }}
     </p>
 </footer>
