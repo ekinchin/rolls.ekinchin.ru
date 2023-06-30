@@ -10,5 +10,5 @@ cp ${SOURCE}/index.md "${TARGET}"
 cd ${SOURCE}/photos/
 for image in *.jpg; do
   convert $image -resize 480 $ROOT/$TARGET/photos/xs-$image
-  convert $image -resize 1920 $ROOT/$TARGET/photos/$image
+  convert $image -resize x1080 $ROOT/$TARGET/photos/$image
 done
