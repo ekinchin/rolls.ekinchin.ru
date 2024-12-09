@@ -9,34 +9,48 @@ layout: base.njk
     </a>
   </p>
   <article class="film_description">
+    {% if filmed %}
     <p class="film_description__date">
       <strong>Date:</strong>
       {{filmed}}
     </p>
+    {% endif %}
+    {% if location %}
     <p class="film_description__location">
       <strong>Location:</strong>
       {{location}}
     </p>
+    {% endif %}
+    {% if story %}
     <p class="film_description__story">
       <strong>Story:</strong>
       {{story}}
     </p>
+    {% endif %}
+    {% if camera %}
     <p class="film_description__camera">
       <strong>Camera</strong>:
       {{camera}}
     </p>
+    {% endif %}
+    {% if lens %}
     <p class="film_description__lens">
       <strong>Lens</strong>:
       {{lens}}
     </p>
+    {% endif %}
+    {% if film %}
     <p class="film_description__film">
       <strong>Film</strong>:
       {{film}}
     </p>
+    {% endif %}
+    {% if developing %}
     <p class="film_description__develop">
       <strong>Developing</strong>:
       {{developing}}
     </p>
+    {% endif %}
   </article>
   <div class="contacts_container">
 
