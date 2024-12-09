@@ -29,12 +29,12 @@
 .roll_container p {
   color: white;
   font-weight: 400;
-  padding: 16px;
 }
 
 .roll_container__description {
   background-color: inherit;
-  padding: 8px;
+  padding: 16px 16px 0px 16px;
+
 }
 
 .roll_container a {

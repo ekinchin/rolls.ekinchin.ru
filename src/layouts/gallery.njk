@@ -11,6 +11,10 @@ eleventyImport:
       <a href="/rolls/{{roll.data.number}}/index.html" class="text">
         <div class="roll_container__description" type="button">
           <p class="description__title">{{ roll.data.title }}</p>
+          <div class="description__details">
+          <p class="description__filmed">{{roll.data.filmed}}</p>
+          <p class="description__camera">{{roll.data.camera}}</p>
+        </div>
         </div>
         <ul type="none">
           {%- for photo in roll.data.photos -%}
@@ -19,10 +23,6 @@ eleventyImport:
             </li>
           {%- endfor -%}
         </ul>
-        <div class="roll_container__description description__details">
-          <p class="description__filmed">{{roll.data.filmed}}</p>
-          <p class="description__camera">{{roll.data.camera}}</p>
-        </div>
       </a>
     </div>
   {%- endfor -%}
