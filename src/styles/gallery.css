@@ -15,7 +15,6 @@
 .roll_container {
   flex-shrink: 0;
   height: 100%;
-  max-width: 360px;
   padding: 0 0 0 0;
   background-color: #C6C6C6;
   overflow: auto;
