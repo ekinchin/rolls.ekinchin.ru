@@ -1,12 +1,13 @@
 ---
 layout: base.njk
-eleventyImport:
-  collections: ["roll"]
+pagination:
+  data: collections.pagedRolls
+  size: 3
+  alias: rolls
 ---
 
 <main class="gallery_container">
-  {%- for roll in collections.roll | reverse -%}
-    {{roll.number}}
+  {%- for roll in rolls -%}
     <div class="roll_container" type="button">
       <a href="/rolls/{{roll.data.number}}/index.html" class="text">
         <div class="roll_container__description" type="button">
@@ -26,4 +27,15 @@ eleventyImport:
       </a>
     </div>
   {%- endfor -%}
+
+  {% if pagination.href.previous or pagination.href.next %}
+    <div class="pagination">
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">← Предыдущая</a>
+      {% endif %}
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}">Следующая →</a>
+      {% endif %}
+    </div>
+  {% endif %}
 </main>

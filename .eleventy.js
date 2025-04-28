@@ -7,6 +7,11 @@ module.exports = function (config) {
   config.addPassthroughCopy("src/styles");
   config.addPassthroughCopy("src/rolls/**/photos/*.jpg");
 
+  // Настройка пагинации
+  config.addCollection("pagedRolls", function(collectionApi) {
+    return collectionApi.getFilteredByTag("roll").reverse();
+  });
+
   return {
     dir: {
       includes: "includes",
@@ -23,5 +28,8 @@ module.exports = function (config) {
     templateFormats: [
       'md', 'njk'
     ],
+    pagination: {
+      size: 3
+    }
   };
 };
