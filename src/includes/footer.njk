@@ -2,7 +2,6 @@
     <p class="footer__say text">
         {{ meta.message }}
     </p>
-    <a class="text" href="{{ meta.github }}">GitHub</a>
     {% if pagination.href.previous or pagination.href.next %}
       <div class="pagination">
         {% if pagination.href.previous %}
@@ -13,8 +12,5 @@
         {% endif %}
       </div>
     {% endif %}
-    <a class="text" href="{{ meta.poweredBy }}">Powered by Eleventy</a>
-    <p class="footer__year text">
-      {{ meta.year }}
-    </p>
+    <a class="text" href="{{ meta.github }}">GitHub</a>
 </footer>
