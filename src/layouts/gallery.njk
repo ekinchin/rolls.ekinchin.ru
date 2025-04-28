@@ -27,15 +27,4 @@ pagination:
       </a>
     </div>
   {%- endfor -%}
-
-  {% if pagination.href.previous or pagination.href.next %}
-    <div class="pagination">
-      {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}">← Предыдущая</a>
-      {% endif %}
-      {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}">Следующая →</a>
-      {% endif %}
-    </div>
-  {% endif %}
 </main>

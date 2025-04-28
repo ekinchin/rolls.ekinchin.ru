@@ -3,6 +3,16 @@
         {{ meta.message }}
     </p>
     <a class="text" href="{{ meta.github }}">GitHub</a>
+    {% if pagination.href.previous or pagination.href.next %}
+      <div class="pagination">
+        {% if pagination.href.previous %}
+          <a href="{{ pagination.href.previous }}" class="text">← Предыдущая</a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a href="{{ pagination.href.next }}" class="text">Следующая →</a>
+        {% endif %}
+      </div>
+    {% endif %}
     <a class="text" href="{{ meta.poweredBy }}">Powered by Eleventy</a>
     <p class="footer__year text">
       {{ meta.year }}
