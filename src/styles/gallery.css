@@ -6,7 +6,7 @@
   flex-direction: row;
   gap: 24px;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: safe center;
   overflow-y: hidden;
   overflow-x: scroll;
   background-color: #f6f6F6;
