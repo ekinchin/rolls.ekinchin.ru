@@ -16,6 +16,7 @@ tags:
   - olympus
   - zuiko 28mm
   - rodinal
+  - kentmere
 photos:
   - number: 1
     description: Рита Софт читает. Здесь и до 3 - в Ельцин Центре
