@@ -5,6 +5,7 @@ module.exports = function (config) {
     return yaml.load(contents);
   });
   config.addPassthroughCopy("src/styles");
+  config.addPassthroughCopy("src/scripts");
   config.addPassthroughCopy("src/rolls/**/photos/*.jpg");
 
   // Настройка пагинации

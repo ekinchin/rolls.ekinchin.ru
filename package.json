@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx @11ty/eleventy --serve --watch",
     "build": "npx @11ty/eleventy",
-    "test": "sh test/add-new-roll.test.sh && sh test/layout-css.test.sh",
+    "test": "sh test/add-new-roll.test.sh && sh test/layout-css.test.sh && sh test/lightbox-ui.test.sh",
     "deploy": "npm run build && cd dist && aws --endpoint-url=https://storage.yandexcloud.net s3 sync ./ s3://rolls.ekinchin.ru",
     "new": "sh ./add-new-roll.sh"
   },

@@ -56,7 +56,12 @@ layout: base.njk
 
     {%- for photo in photos -%}
       <div class="contact">
-        <a href="/rolls/{{number}}/photos/{{photo.number}}.jpg">
+        <a
+          href="/rolls/{{number}}/photos/{{photo.number}}.jpg"
+          data-gallery-link
+          data-photo-index="{{ loop.index0 }}"
+          data-photo-caption="{{ photo.number }}. {{ photo.description | escape }}"
+        >
           <img class="contact__image" src="/rolls/{{number}}/photos/xs-{{photo.number}}.jpg" loading="lazy" alt="{{photo.description}}">
         </a>
         <p>
@@ -65,5 +70,15 @@ layout: base.njk
       </div>
     {%- endfor -%}
 
+  </div>
+
+  <div class="lightbox" data-lightbox hidden>
+    <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close photo viewer">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous photo">←</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__image" data-lightbox-image alt="">
+      <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next photo">→</button>
   </div>
 </main>
