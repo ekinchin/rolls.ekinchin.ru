@@ -4,7 +4,6 @@ body {
   width: 100%;
 }
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -21,16 +20,16 @@ body {
 .header_container {
   width: 100%;
   background-color: #3B3B3B;
-  padding: 8;
+  padding: 8px;
 }
 
 .header__sitename {
-  margin-bottom: 8PX;
-  font-weight: (--font-weight-regular);
+  margin-bottom: 8px;
+  font-weight: var(--font-weight-regular);
 }
 
 .header__author {
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
 }
 
 .footer_container {
@@ -38,13 +37,19 @@ body {
   width: 100%;
   background-color: #3B3B3B;
   padding: 8px;
-  font-weight: (--font-weight-light);
+  font-weight: var(--font-weight-light);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  bottom: 0;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .text {
   color: whitesmoke;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
